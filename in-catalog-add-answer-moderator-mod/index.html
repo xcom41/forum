@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика - Форум ВятГУ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="ВятГУ Форум"> 
+            <span>ВятГУ Форум</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+            <button><img src="search-icon.svg" alt="" width="30"></button>
+        </div>
+        <button class="login-button">Вход</button>
+    </header>
+
+    <main>
+        <section class="forum-header">
+            <h1>Математика</h1>
+            <button class="create-post-button">+ Создать пост</button>
+        </section>
+
+        <section class="post" id="post-1">
+            <div class="post-header">
+                <div class="author">
+                    <span class="author-name">Иванов Иван Иванович</span>
+                    <span class="course">ИВТБ 1 курс</span>
+                </div>
+                <span class="timestamp">01/09/2024 Вск 08.00</span>
+            </div>
+            <div class="post-content">
+                Как пройти в четвертый корпус? :(
+                Подскажите пожалуйста.
+            </div>
+            <div class="post-actions">
+                <button class="like-button"><img src="like.svg" alt="" width="25"></button>
+                <button class="dislike-button"><img src="dislike.svg" alt="" width="25"></button>
+            </div>
+
+            <div class="reply-section">
+                <input type="hidden" id="username" value="Петров Петр Петрович">
+                <textarea placeholder="Ответить..." id="reply-1"></textarea>
+                <button class="send-button" onclick="addReply(1)">Отправить</button>
+            </div>
+            <div class="sent-replies" id="sent-replies-1"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
